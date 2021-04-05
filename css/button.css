@@ -1,0 +1,30 @@
+button:hover {
+    opacity: 0.8;
+    background: #93cb52;
+  }
+  input, option, select, button{
+    width: 200px;
+    padding: 10px;
+    font-size: 18px;
+    border: unset;
+    background: #e4eff8;
+    border: 1px solid #e4eff8;
+    border-radius: 3px;
+  }
+  .input-group{
+    padding-bottom: 10px;
+  }
+  .input-group button{
+    background: #93cb52;
+    font-size: 18px;
+    color: black;
+    align-self: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background: #ffffff;
+    padding: 10px 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  

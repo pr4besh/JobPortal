@@ -1,0 +1,335 @@
+/*EXTERNAL CSS */
+*{
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS FOR NAVIGATION BAR */
+#navigation{
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #2F4F4F;
+  color: white;
+  justify-content: space-between;
+  z-index: 1000;
+  padding: 10px 20px 10px 0px;
+}
+
+#navigation ul{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  position: relative;
+}
+
+#navigation ul li a{
+  color: white;
+  font-style: normal;
+  padding: 10px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+li a:hover{
+  background-color: #93cb52;
+  border-radius: 5px;
+}
+/* CSS TO MAKE HOME PAGE ACTIVE */
+.active {
+  background-color: #93cb52;
+  border-radius: 5px;
+}
+/* FOR HEADER */
+
+
+ /*CSS FOR EVERY IMG IN HTML */
+.logo {
+  padding-left: 20px;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: auto;
+}
+
+hr{
+  display: block;
+  border: 1px inset;
+}
+
+/* CSS TO FOOTER OF EVERY PAGE */
+.footer{
+  text-align: center;
+  padding: 8px;
+  background-color:#222c35;
+  color: ghostwhite;
+}
+.footer-main{
+  background: #2F4F4F;
+}
+input{
+  width: 50%;
+}
+
+/* FOR BODY AND HTML OF WEB PAGE */
+body, html{
+  margin: 0;
+  padding: 1px;
+  color: white;
+  font-size: 15px;
+  line-height: 1.7em;
+  letter-spacing: .5px;
+  background-color:#222c35;
+  font-family: 'Lato', sans-serif !important;
+}
+/* CSS FOR email_inf ID*/
+#email_inf{
+ background-color: #313131;
+ color: white;
+}
+/* CSS FOR SOCIAL ICON*/
+.socialicon{
+    position: center;
+    top: 50%;
+    left: 40%;
+    transform: inherit;
+    margin-bottom: 15px;
+}
+
+.socialicon a{
+    display: inline-flex;
+    width: 40px;
+    height: 40px;
+    text-decoration: none;
+    background: #2c3e50;
+    color: white;
+    margin: 0 6px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    transition: 0.4s;
+    font-size: 22px;
+}
+.socialicon a:hover{
+    background: #93cb52;
+}
+
+.socialicon a i{
+    transition: 0.5s all;
+}
+
+.socialicon a:hover > i{
+    transform: scale(1.6) rotate(25deg)
+}
+
+/* CSS FOR BOX CLASS OF FOOTER */
+.box{
+    align-content: center;
+    height: 100px;
+    padding: 20px;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    color: #eeeeee;
+}
+
+.box span{
+    font-size: 80px;
+    height: 80px;
+    display: block;
+    line-height: 80px;
+    text-align: center;
+}
+
+.box h2{
+    text-transform: uppercase;
+    text-align: center;
+    margin: 10px 0;
+}
+
+.box p{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.tbox{
+    width: 50%;
+    height: 40px;
+    border-radius: 40px;
+    overflow: hidden;
+    background: #313131;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tbox button{
+    float:right;
+    width: 100px;
+    text-align: center;
+    height: 40px;
+    color: white;
+    font-size: 20px;
+    background: #2980b9;
+    border-radius: 40px;
+    transition: 0.4s all;
+    background-color: blue;
+}
+
+.tbox input{
+    border: none;
+    margin: 0 14px;
+    background: none;
+    color: white;
+    font-size: 18px;
+    outline: none;
+    padding: 10px 0;
+}
+
+.tbox button:hover{
+    opacity: 0.8;
+}
+
+#box-grid{
+  display: grid;
+}
+
+/* TO MAKE EVERY BUTTON HOVER*/
+button:hover{
+    opacity: 0.8;
+    background-color: green;
+}
+
+/* CSS FOR SKILLBAR OF SKILLS IN CV PAGE 
+.skillbar {
+	position:relative;
+	display:block;
+	margin-bottom:33px;
+	width:100%;
+	background:#eee;
+	height:30px;
+	border-radius:35px;
+	-moz-border-radius:35px;
+	-webkit-border-radius:35px;
+	-webkit-transition:0.4s linear;
+	-moz-transition:0.4s linear;
+	-ms-transition:0.4s linear;
+	-o-transition:0.4s linear;
+	transition:0.4s linear;
+	-webkit-transition-property:width, background-color;
+	-moz-transition-property:width, background-color;
+	-ms-transition-property:width, background-color;
+	-o-transition-property:width, background-color;
+	transition-property:width, background-color;
+}
+
+.skillbar-title {
+	position:absolute;
+	top:0;
+	left:0;
+	width:110px;
+	font-size:15px;
+	color:#ffffff;
+	background:#6adcfa;
+	-webkit-border-radius:35px;
+	-moz-border-radius:35px;
+	-moz-border-radius:35px;
+	border-radius:35px;
+}
+
+.skillbar-title span {
+	display:block;
+	background:rgba(0, 0, 0, 0.15);
+	padding:0 20px;
+	height:30px;
+	line-height:30px;
+	-webkit-border-radius:35px;
+	-moz-border-radius:35px;
+	-moz-border-radius:35px;
+	border-radius:35px;
+}
+
+.skillbar-bar {
+	height:30px;
+	width:0px;
+	background:#6adcfa;
+	border-radius:35px;
+	-moz-border-radius:35px;
+	-webkit-border-radius:35px;
+}
+
+.skill-bar-percent {
+	position:absolute;
+	right:10px;
+	top:0;
+	font-size:12px;
+	height:30px;
+	line-height:30px;
+	color:#ffffff;
+  color:rgba(0, 0, 0, 0.4);
+}*/
+
+/* CSS FOR FORM OF CONTACT PAGE */
+.login-form {
+  padding: 0 80px;
+  align-items: center;
+}
+
+.login-form .input-group {
+  margin-top: 3px;
+  width: 100%;
+  max-width: 100%;;
+}
+
+.login-form .input-group input{
+  padding: 15px;
+  font-size: 13px;
+  border: unset;
+  background: #e4eff8;
+  border: 1px solid #e4eff8;
+  border-radius: 50px;
+}
+
+.login-form .input-group input:focus {
+  outline: none;
+  border-color: #ffffff; 
+}
+
+.login-form .input-group label {
+  color: green;
+  font-size: 16px;
+  margin-bottom: 3px;
+  margin-left: 8px;
+}
+
+.login-form .input-group button {
+  font-size: 18px;
+  color: black;
+  align-self: center;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: #ffffff;
+  padding: 10px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+.login-form .input-group button:hover {
+  background: #93cb52; 
+}
+
+.jumbotron {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+table{
+  table-layout:auto;
+  width:100%;
+}
+

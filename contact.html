@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- META INFORMATION -->
+    <meta charset="UTF-8"/>
+    <meta name="description" content="This is the offical page of Sanjit Adhikari">  
+    <meta name="author" content="Sanjit Adhikari"> 
+    
+    <!-- EXTERNAL CSS AND ICONS -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <script type="text/javascript" src="javascript.js"></script>
+    <link rel="stylesheet" href="./css/dropdownbutton.css">
+    <script type="text/javascript" src="./js/dropdown.js"></script>
+    <!-- INTERNAL CSS STARTS -->
+    <style>
+        .container-form{
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .wrap-group{
+            display: flex;
+        }
+
+        .left-col, .map{
+            flex: 1;
+        }
+
+        .left-col{
+            padding: 20px;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .left-col li{
+            list-style: none;
+            margin-left: 20px;
+        }
+    </style>
+    <!-- INTERNAL CSS ENDS -->
+    <!-- ADDING TITLE ICONS AND NAME -->
+    <title>Maya Job Portal System</title>
+    <link rel="icon" type="image" href="./Logo/Logo.png" alt="Logo" width=60 height=60>
+</head>
+<body>
+    <!-- HEADER STARTS -->
+    <header id="header-sec">
+    <!-- NAVIGATION STARTS -->    
+    <nav id="navigation">
+        <div class="logo">
+            <h1 class="name-logo">
+                <a href="home.html"><IMG SRC="./Logo/LogoFinal.png" ALT="Logo" height="35"></IMG></a>
+            </h1>
+        </div>
+        <ul>
+           <li><a href="index.php">Home</a></li>
+           <li><a href="about.html">About</a></li> 
+            <li><a href="contact.php" class="active">Contact</a></li>
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Login</button>
+                <div id="myDropdown" class="dropdown-content">
+                <a href="./Login/login.php">User Login</a>
+                <a href="./Login/employeelogin.php">Employee Login</a>
+                <a href="./Login/companylogin.php">Registered Company Login</a>
+                </div>
+            </div>
+            <li><a href="signup.php">Sign Up</a></li>
+        </ul>          
+    </nav>
+    <!-- NAVIGATION ENDS --> 
+        <!-- CONTENT STARTS -->
+        <h1 style="text-align: center; margin: 10px; padding-top: 60px;">Feel Free To Contact Me</h1>
+        <!-- SECTION STARTS -->
+        <section class="wrap-group">	
+			<div class="left-col">
+				<h2 style="margin-bottom: 20px; color: green; padding-left: 30px;">Address</h2>
+				<ul class="address-info">
+				    <li>Email: contact@mayagroup.com.np</li>
+					<li>Email: admin@mayagroup.com.np</li>
+					<li>Address: Shuklagandaki-02, Kotre Bazar, Tanahun, Nepal</li>
+					<li>Contact Number: +9779856017172</li>	
+                </ul>
+            </div>
+            
+            <div class="map">
+                <h2 style="text-align:center; color: green">Get Us Here!</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3515.71333447801!2d83.9993449289276!3d28.21602085359728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39959434ad2a5bf9%3A0xf4e7f9c749f63113!2sInformatics%20College%20Pokhara!5e0!3m2!1sen!2snp!4v1607943414072!5m2!1sen!2snp"
+                width="600" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </section>
+        <!-- SECTION ENDS -->
+        <hr>
+        
+        <div class="container-form">
+            <h1 style="margin-top: 10px; padding: 20px 0 0 0;">Stay in Touch. Just Fill the Form.</h1>
+            <!-- FORM STARTS -->
+            <form action="www.facebook.com" class="login-form" onsubmit="return validation()" METHOD="POST">
+                    <div class="input-group">
+                        <label for="name"><h3>Full Name</h3></label>
+                        <input name="name" type="text" placeholder="Full Name" id="name" required><br>
+                        <span id="username"> </span>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="username"><h3>Email Address</h3></label>
+                        <input name="email" type="email" placeholder="Email(..@example.com)" id="email" required="email">
+                        <span id="mail"> </span>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="phone"><h3>Phone Number</h3></label> 
+                        <input name="contact" type="number" placeholder="Phone Number" id="contact" required>
+                        <span id="Phone"> </span>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="message"><h3>Message</h3></label>
+                        <input style="height: 80px" name="message" id="message" placeholder="Enter your Message." required>
+                        <span id="mail"> </span>
+                    </div>
+
+                    <div class="input-group">
+                        <button name="submitbut" value="Submit">Submit</button>
+                    </div>
+            </form>
+            <!-- FORM ENDS -->
+        </div>
+        <!-- CONTENT ENDS -->
+</header>
+ <!-- HEADER ENDS -->   
+    
+<!-- FOOTER STARTS -->
+<footer class="footer">
+    <hr>
+    <section id="box-grid">
+        <div class="box">
+            <i class="fas fa-envelope fa-3x"></i>
+            <h3> Subscribe now and stay with us.</h3>
+        </div>
+    
+        <div class="tbox">
+            <input id="email_inf" type="email" name="email" placeholder="Enter your email address" required="email">
+            <button type="submit" class="fas fa-check-square" onclick="submitFunction()"></button>
+        </div>
+    </section>
+    <div class="socialicon">
+        <h4 style="color:white; margin-bottom: 15px;"> Find me! </h4>
+                <a href="https://www.facebook.com/sanzit17" target="_blank"><i class="fab fa-facebook-square"></i></a>
+                <a href="https://www.twitter.com/sanzit17" target="_blank"><i class="fab fa-twitter-square"></i></a>
+                <a href="https://www.instagram.com/sanzit17" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.youtube.com/channel/UCWLgazYeOBTxxca0GFY3Rmw" target="_blank"><i class="fab fa-youtube"></i></a>
+    </div>
+    <hr>
+    <div class="footer-main" style="padding:5px;">
+        <h4>Copyright &copy; Maya Job Portal System
+        <script>var year = new Date(); document.write(year.getFullYear());</script>. All Right Reserved </h4>
+    </div>
+    <hr>
+</footer>
+<!-- FOOTER ENDS -->    
+</body>
+</html>

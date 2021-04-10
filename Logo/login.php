@@ -34,7 +34,7 @@
                 <li><a href="home.html">Home</a></li>
                 <li><a href="about.html">About</a></li> 
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="login.php" class="active">Login/SignUp</a></li>
+                <li><a href="login.php" class="active">Register</a></li>
             </ul>        
     </nav>
     <!-- NAVIGATION BAR ENDS-->

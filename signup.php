@@ -10,6 +10,7 @@ include './config.php'
     <meta name="description" content="This is the offical page of Maya Job Portal System">  
     <meta name="author" content="Maya Job Portal System">    
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- ADDING EXTERNAL ICONS AND EXTERNAL CSS-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
@@ -40,17 +41,11 @@ include './config.php'
             <li><a href="index.php">Home</a></li>
             <li><a href="about.html">About</a></li> 
              <li><a href="contact.html">Contact</a></li>
-             <div class="dropdown">
-                <button onclick="myFunction()" class="dropbtn" style="width: auto;">Login</button>
-                <div id="myDropdown" class="dropdown-content">
-                <a href="./Login/login.php">User Login</a>
-                <a href="./Login/employeelogin.php">Employee Login</a>
-                <a href="./Login/companylogin.php">Registered Company Login</a>
-                </div>
-            </div>
-             <li><a href="signup.php" class="active">Sign Up</a></li>
+             <li><a href="signup.php" class="active">Register</a></li>
          </ul>          
     </nav>
+</header>
+<!-- HEADER ENDS -->   
     <!-- NAVIGATION BAR ENDS-->
 
     <?php
@@ -117,16 +112,34 @@ include './config.php'
 
     ?>
 
-    <h1 style="text-align: center; color: green; padding-top:70px;">Maya Job Portal System</h1><br>
-    <h3 style="text-align: center;">Job Seeker Registration Details</h3><br>
     <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" name="form" METHOD="POST" enctype="multipart/form-data">
-        <section id="rights" style="display: flex">
-            <div class="right"  style="padding-left: 300px;">
+        <section id="rights">
+            <div class="tits">
+                <h1>Job Seeker Registration Details</h1>
+            </div>
+
+            <div class="dropdown">
+                <h1 style="font-size: 20px
+                ">Already a Member? Login.</h1>
+                <button onclick="myFunction()" class="dropbtn">Log In</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <a href="./Login/login.php">User Login</a>
+                    <a href="./Login/employeelogin.php">Employee Login</a>
+                    <a href="./Login/companylogin.php">Registered Company Login</a>
+                </div>
+             </div> 
+
+             <div class="tits">
+                 <h1 style="margin-top: 20px; color: red;">New Member? Register.</h1>
+             </div>
+
+            <div class="right">
                 <div class="input-group">
                     <label for="name"><h3>Full Name</h3></label>
                     <input name="name" type="text" placeholder="" id="name" required><br>
                     <span id="name"> </span>
                 </div>
+
                 <div class="input-group">
                     <label for="gender"><h3>Gender</h3></label>
                     <select id="gender" name="gender" required>
@@ -148,12 +161,13 @@ include './config.php'
                 </div>
             </div>
 
-            <div class="left" style="padding-left: 300px">
+            <div class="left">
                 <div class="input-group">
                     <label for="address"><h3>Address</h3></label>
                     <input name="address" id="address" placeholder="" required>
                     <span id="address"> </span>
                 </div>
+
                 <div class="input-group">
                     <label for="type"><h3>Type</h3></label>
                     <select id="type" name="type" required>
@@ -162,6 +176,7 @@ include './config.php'
                         <option value="Part">Part-Time</option>
                     </select>
                 </div>
+
                 <div class="input-group">
                     <label for="dateOfBirth"><h3>Date of Birth</h3></label> 
                     <input name="dateOfBirth" type="date" placeholder="" id="dateOfBirth" required>
@@ -174,44 +189,45 @@ include './config.php'
                     <span id="conpassword"> </span>
                 </div>
             </div>
+
+            <div class="input-group">
+                <button class="subtn" name="submit" value="submit" onclick="return confirmation();">Submit</button>
+            </div>
         </section>
-        <div class="input-group" style="padding-left: 600px;">
-            <button name="submit" value="submit" onclick="return confirmation();">Submit</button>
-        </div>
     </form>
-
-
-</header>
-<!-- HEADER ENDS -->    
 
     <!-- FOOTER STARTS -->    
     <footer class="footer">
         <hr>
         <section id="box-grid">
-        <div class="box">
-            <i class="fas fa-envelope fa-3x"></i>
-            <h3> Subscribe now and stay with us.</h3>
-        </div>
-    
-        <div class="tbox">
-            <input id="email_inf" type="email" name="email" placeholder="Enter your email address" required="email">
-            <button type="submit" class="fas fa-check-square" onclick="submitFunction()"></button>
-        </div>
+            <div class="box">
+                <i class="fas fa-envelope fa-3x"></i>
+                <h3> Subscribe now and stay with us.</h3>
+            </div>
+
+            <div class="tbox">
+                <input id="email_inf" type="email" name="email" placeholder="Enter your email address" required="email">
+                <button type="submit" class="fas fa-check-square" onclick="submitFunction()"></button>
+            </div>
         </section>
         <div class="socialicon">
-            <h4 style="color:white; margin-bottom: 15px;"> Find Us! </h4>
-                <a href="https://www.facebook.com/sanzit17" target="_blank"><i class="fab fa-facebook-square"></i></a>
-                <a href="https://www.twitter.com/sanzit17" target="_blank"><i class="fab fa-twitter-square"></i></a>
-                <a href="https://www.instagram.com/sanzit17" target="_blank"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.youtube.com/channel/UCWLgazYeOBTxxca0GFY3Rmw" target="_blank"><i class="fab fa-youtube"></i></a>
+            <h4 style="color:white; margin-bottom: 15px;"> Find me! </h4>
+            <a href="https://www.facebook.com/sanzit17" target="_blank"><i class="fab fa-facebook-square"></i></a>
+            <a href="https://www.twitter.com/sanzit17" target="_blank"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com/sanzit17" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.youtube.com/channel/UCWLgazYeOBTxxca0GFY3Rmw" target="_blank"><i
+                    class="fab fa-youtube"></i></a>
         </div>
         <hr>
-        <div class="footer-main">
-        <h4 style="padding:5px;">Copyright &copy; Maya Job Portal System
-        <script>var year = new Date(); document.write(year.getFullYear());</script>. All Right Reserved </h4>
+        <div class="footer-main" style="padding:5px;">
+            <h4>Copyright &copy; Maya Job Portal System
+                <script>
+                    var year = new Date();
+                    document.write(year.getFullYear());
+                </script>. All Right Reserved </h4>
         </div>
         <hr>
     </footer>
-     <!-- FOOTER ENDS -->    
+    <!-- FOOTER ENDS -->
 </body>
 </html>

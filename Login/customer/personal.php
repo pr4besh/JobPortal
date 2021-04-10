@@ -22,6 +22,7 @@ if(!isset($_SESSION['name']))
     <link rel="stylesheet" href="../../css/dropdownbutton.css">
     <link rel="stylesheet" href="../../css/profile.css">
     <link rel="stylesheet" href="../../css/button.css">
+    <link rel="stylesheet" href="../css/jumbotron.css">
     
     <!-- ADDING EXTERNAL JAVASCRIPT -->
     <script type="text/javascript" src="../../js/dropdown.js"></script>

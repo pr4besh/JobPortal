@@ -9,6 +9,7 @@ session_start();
     <meta name="description" content="This is the offical page of Maya Job Portal System">  
     <meta name="author" content="Maya Job Portal System">    
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
     
@@ -24,11 +25,6 @@ session_start();
     <script type="text/javascript" src="../js/confirm.js"></script>
     <script type="text/javascript" src="../js/dropdown.js"></script>
     <style>
-        .user_card{
-            margin-left: auto;
-            margin-right: auto;
-            width: 24em
-        }
         .d-flex, .input-group, .form-group, .right{padding-left: 20px;}
     </style>
     <!-- TITLE NAME AND ICON-->
@@ -59,7 +55,6 @@ session_start();
                 <a href="companylogin.php">Registered Company Login</a>
                 </div>
             </div>
-             <li><a href="../signup.php">Sign Up</a></li>
          </ul>          
     </nav>
     <!-- NAVIGATION BAR ENDS-->
@@ -105,7 +100,7 @@ session_start();
         }
     }
 ?>
-    <h1 style="text-align: center; color: green; padding-top:80px;">Maya Job Portal System</h1><br>
+    <h1 class="title" style="text-align: center; color: green; padding-top:80px;">Maya Job Portal System</h1><br>
     <h3 style="text-align: center;">Employee Login Panel</h3>
     <br><br><br>
     <div class="container h-90">
@@ -149,11 +144,16 @@ session_start();
 				   </div>
 					</form>
 				</div>
+                <div class="mt-4">
+					<div class="d-flex justify-content-center links" style="margin-top: 20px;">
+						Don't have an account? <a href="../signup.php" class="ml-2" style="border: 1px solid black; background: #fff; color: black; padding: 10px;">Sign Up</a>
+					</div>
+				</div>
 			</div>
 		</div>
     </div><br>
 </header>
-<!-- HEADER ENDS -->    
+<!-- HEADER ENDS -->                 <li><a href="../signup.php">Sign Up</a></li>
     <!-- FOOTER STARTS -->    
     <footer class="footer">
         <hr>

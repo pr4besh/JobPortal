@@ -1,26 +1,31 @@
 .jumbotron {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1.8;
     padding-top: 30px;
     padding-bottom: 30px;
     padding-left: 60px;
     margin-bottom: 30px;
     color: inherit;
-    background-color: #2b3232;
+    background-color: #161819;
+    height: 350px;
 }
 
-    .jumbotron h1,
-    .jumbotron .h1 {
-        color: inherit;
-    }
+.jumbotron h1,
+.jumbotron .h1 {
+    color: inherit;
+}
 
-    .jumbotron p {
-        margin-bottom: 15px;
-        font-size: 21px;
-        font-weight: 200;
-    }
+.jumbotron p {
+    margin-bottom: 15px;
+    font-size: 21px;
+    font-weight: 300;
+}
 
-    .jumbotron > hr {
-        border-top-color: #d5d5d5;
-    }
+.jumbotron>hr {
+    border-top-color: #d5d5d5;
+}
 
 .container .jumbotron,
 .container-fluid .jumbotron {
@@ -33,25 +38,121 @@
     max-width: 100%;
 }
 
-@media screen and (min-width: 768px) {
+.btn, .jumbbtn{
+    background-color: #93cb52;
+    color: black;
+    padding: 10px;
+    border-radius: 6px;
+    float: inline-start;
+    margin-top: 10px;
+}
+
+.jumbbtn {
+    position: absolute;
+    top: 30%;
+}
+
+.col-md-4 {
+    margin: 10px 8px;
+    line-height: 1.9;
+}
+
+@media only screen and (min-width: 280px) and (max-width: 420px) {
+
     .jumbotron {
-        padding-top: 48px;
-        padding-bottom: 48px;
+        height: 100vh;
     }
 
-    .container .jumbotron,
-    .container-fluid .jumbotron {
-        padding-right: 60px;
-        padding-left: 60px;
+    .jumbotron h1,
+    .jumbotron .h1 {
+        font-size: 22px;
+    }
+
+    .btn, .jumbbtn{
+        background-color: #93cb52;
+        color: black;
+        padding: 10px;
+        border-radius: 6px;
+        float: inline-start;
+        margin-top: 10px;
+    }
+
+    .jumbbtn {
+        width: 40%;
+        margin-top: 0%;
+        top: 85%;
+    }
+
+    .col-md-4 {
+        margin: 10px 0;
+        line-height: 1.5;
+    }
+}
+
+@media (min-width: 420px) and (max-width: 768px) {
+    .jumbotron {
+        height: 100vh;
+    }
+
+    .jumbotron h1,
+    .jumbotron .h1 {
+        font-size: 24px;
+    }
+
+    .btn, .jumbbtn{
+        background-color: #93cb52;
+        color: black;
+        padding: 10px;
+        border-radius: 6px;
+        float: inline-start;
+        margin-top: 10px;
+    }
+
+    .jumbbtn {
+        width: 40%;
+        margin-top: 0%;
+        top: 70%;
+    }
+
+    .col-md-4 {
+        margin: 10px 0;
+        line-height: 1.5;
+    }
+}
+
+/* Tablets Media Query */
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .jumbotron {
+        height: 100vh;
     }
 
     .jumbotron h1,
     .jumbotron .h1 {
         font-size: 40px;
     }
-     
-    .col-md-4 {
-        width: 33.33333333%;
+
+    .jumbotron p {
+        font-size: 26px;
+    }
+
+    .btn, .jumbbtn{
+        background-color: #93cb52;
+        color: black;
         padding: 10px;
+        border-radius: 6px;
+        float: inline-start;
+        margin-top: 10px;
+    }
+
+    .jumbbtn {
+        width: 20%;
+        margin-top: 0%;
+        top: 65%;
+    }
+
+    .col-md-4 {
+        margin: 10px 0;
+        line-height: 1.5;
     }
 }
